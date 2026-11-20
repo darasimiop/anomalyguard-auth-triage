@@ -1,0 +1,8 @@
+timestamp_iso,user,ip,event,score,class,severity,reason,geo,geo_source,occurrences,timestamp,status
+2025-11-17T08:10:00+00:00,example-ops,203.0.113.42,SSH password authentication failed,0.91,FailedLoginSpike,high,>=3 failures for user,EU,simulated_prefix,3,2025-11-17T08:10:00Z,Failed
+2025-11-17T08:10:20+00:00,example-ops,203.0.113.42,SSH password authentication failed,0.93,FailedLoginSpike,high,>=3 failures for user,EU,simulated_prefix,3,2025-11-17T08:10:20Z,Failed
+2025-11-17T08:10:40+00:00,example-ops,203.0.113.42,SSH password authentication failed,0.95,FailedLoginSpike,high,>=3 failures for user,EU,simulated_prefix,3,2025-11-17T08:10:40Z,Failed
+2025-11-17T08:11:00+00:00,example-build,192.0.2.77,SSH password authentication failed,0.82,RepeatedSourceIP,medium,repeated source ip,US,simulated_prefix,3,2025-11-17T08:11:00Z,Failed
+2025-11-17T08:11:06+00:00,example-audit,192.0.2.77,SSH password authentication failed,0.84,RepeatedSourceIP,medium,repeated source ip,US,simulated_prefix,3,2025-11-17T08:11:06Z,Failed
+2025-11-17T08:11:13+00:00,example-support,192.0.2.77,SSH password authentication failed,0.86,RepeatedSourceIP,medium,repeated source ip,US,simulated_prefix,3,2025-11-17T08:11:13Z,Failed
+,example-backup,198.51.100.19,SSH password authentication denied,0.94,HighScoreOutlier,medium,>=0.9 score,INTL,simulated_prefix,1,,Failed

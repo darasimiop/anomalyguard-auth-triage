@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AnomalyGuard findings</title>
+<style>
+  body { margin: 0; background: #f2f6f5; color: #172e35; font: 16px system-ui, sans-serif; }
+  main { max-width: 90rem; padding: 3rem 1.5rem; margin: auto; }
+  h1 { color: #124b51; margin-bottom: .5rem; }
+  p { margin: .65rem 0 1rem; }
+  .table-wrap { overflow-x: auto; background: white; border: 1px solid #cad9d8; }
+  table { width: 100%; border-collapse: collapse; font-size: .85rem; }
+  th, td { padding: .65rem; border-bottom: 1px solid #dbe6e4; text-align: left; vertical-align: top; }
+  th { background: #16464c; color: white; }
+  tr:nth-child(even) { background: #f7faf9; }
+</style>
+</head>
+<body><main>
+<h1>AnomalyGuard findings</h1>
+<p>Rule-based batch review. Severity reflects the matched rule. Geographic labels are simulated.</p>
+<p><strong>7</strong> flagged records.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Timestamp iso</th><th scope="col">User</th><th scope="col">Ip</th><th scope="col">Event</th><th scope="col">Score</th><th scope="col">Class</th><th scope="col">Severity</th><th scope="col">Reason</th><th scope="col">Geo (simulated)</th><th scope="col">Geo source</th><th scope="col">Occurrences</th><th scope="col">Timestamp</th><th scope="col">Status</th></tr></thead><tbody>
+<tr><td>2025-11-17T08:10:00+00:00</td><td>example-ops</td><td>203.0.113.42</td><td>SSH password authentication failed</td><td>0.91</td><td>FailedLoginSpike</td><td>high</td><td>&gt;=3 failures for user</td><td>EU</td><td>simulated_prefix</td><td>3</td><td>2025-11-17T08:10:00Z</td><td>Failed</td></tr>
+<tr><td>2025-11-17T08:10:20+00:00</td><td>example-ops</td><td>203.0.113.42</td><td>SSH password authentication failed</td><td>0.93</td><td>FailedLoginSpike</td><td>high</td><td>&gt;=3 failures for user</td><td>EU</td><td>simulated_prefix</td><td>3</td><td>2025-11-17T08:10:20Z</td><td>Failed</td></tr>
+<tr><td>2025-11-17T08:10:40+00:00</td><td>example-ops</td><td>203.0.113.42</td><td>SSH password authentication failed</td><td>0.95</td><td>FailedLoginSpike</td><td>high</td><td>&gt;=3 failures for user</td><td>EU</td><td>simulated_prefix</td><td>3</td><td>2025-11-17T08:10:40Z</td><td>Failed</td></tr>
+<tr><td>2025-11-17T08:11:00+00:00</td><td>example-build</td><td>192.0.2.77</td><td>SSH password authentication failed</td><td>0.82</td><td>RepeatedSourceIP</td><td>medium</td><td>repeated source ip</td><td>US</td><td>simulated_prefix</td><td>3</td><td>2025-11-17T08:11:00Z</td><td>Failed</td></tr>
+<tr><td>2025-11-17T08:11:06+00:00</td><td>example-audit</td><td>192.0.2.77</td><td>SSH password authentication failed</td><td>0.84</td><td>RepeatedSourceIP</td><td>medium</td><td>repeated source ip</td><td>US</td><td>simulated_prefix</td><td>3</td><td>2025-11-17T08:11:06Z</td><td>Failed</td></tr>
+<tr><td>2025-11-17T08:11:13+00:00</td><td>example-support</td><td>192.0.2.77</td><td>SSH password authentication failed</td><td>0.86</td><td>RepeatedSourceIP</td><td>medium</td><td>repeated source ip</td><td>US</td><td>simulated_prefix</td><td>3</td><td>2025-11-17T08:11:13Z</td><td>Failed</td></tr>
+<tr><td>Unknown</td><td>example-backup</td><td>198.51.100.19</td><td>SSH password authentication denied</td><td>0.94</td><td>HighScoreOutlier</td><td>medium</td><td>&gt;=0.9 score</td><td>INTL</td><td>simulated_prefix</td><td>1</td><td>Unknown</td><td>Failed</td></tr>
+</tbody></table></div>
+</main></body></html>

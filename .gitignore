@@ -1,0 +1,12 @@
+.venv/
+.env
+.env.*
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.tmp/
+reports/
+report.json
+report.csv
+report.html
